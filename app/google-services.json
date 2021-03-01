@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "408588134342",
+    "project_id": "nature-collection-dd858",
+    "storage_bucket": "nature-collection-dd858.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408588134342:android:673c00b3c93654a681b4c7",
+        "android_client_info": {
+          "package_name": "fr.Vilquid.NatureCollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408588134342-78meuon5j7copfr85t8c1mpqnen0vtac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjew-CyFQnxoCN6JGsNoZQ4FBlR0CD9bM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408588134342-78meuon5j7copfr85t8c1mpqnen0vtac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

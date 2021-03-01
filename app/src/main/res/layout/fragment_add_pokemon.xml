@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="@dimen/default_margin">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:id="@+id/upload_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/dark_red"
+			android:textColor="@color/white"
+			android:padding="@dimen/default_margin"
+			style="@style/title_text_style"
+			android:text="@string/add_pokemon_page_upload_button"/>
+
+		<ImageView
+			android:id="@+id/preview_image"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+			android:src="@drawable/trending2" />
+
+	</LinearLayout>
+
+	<EditText
+		android:id="@+id/name_input"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:layout_marginTop="@dimen/item_margin"
+		android:hint="@string/add_pokemon_page_name_input"
+		style="@style/default_text_style"
+		android:paddingLeft="@dimen/default_margin"/>
+
+	<EditText
+		android:id="@+id/description_input"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:layout_marginTop="@dimen/item_margin"
+		android:hint="@string/add_pokemon_page_description_input"
+		style="@style/default_text_style"
+		android:paddingLeft="@dimen/default_margin"/>
+
+	<Spinner
+		android:id="@+id/power_input"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:entries="@array/add_pokemon_page_power_spinner_input"
+		android:layout_marginTop="@dimen/item_margin"
+		android:paddingLeft="@dimen/default_margin"/>
+
+	<Spinner
+		android:id="@+id/tall_input"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:entries="@array/add_pokemon_page_tall_spinner_input"
+		android:layout_marginTop="@dimen/item_margin"
+		android:paddingLeft="@dimen/default_margin"/>
+
+	<Button
+		android:id="@+id/confirm_button"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:layout_marginTop="@dimen/default_margin"
+		android:background="@color/dark_gray"
+		android:text="@string/add_pokemon_page_confirm"
+		android:textColor="@color/white"
+		android:textSize="24dp" />
+</LinearLayout>

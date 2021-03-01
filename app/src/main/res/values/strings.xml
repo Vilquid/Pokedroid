@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Pokémon</string>
+
+    <string name="bottom_home_item">Accueil</string>
+    <string name="bottom_collection_item">Collection</string>
+    <string name="bottom_add_pokemon_item">Ajouter</string>
+
+    <!--Page d'accueil-->
+    <string name="home_page_title">A découvrir</string>
+
+    <!--Pokémon - Accueil-->
+    <string name="home_page_last_pokemon_section">Dernier pokémon</string>
+    <string name="home_page_pokemon_name">Nom du pokémon</string>
+    <string name="home_page_pokemon_description">Description</string>
+
+    <!--Page de collection-->
+    <string name="collection_page_title">Ma collection</string>
+
+    <!--Page d'ajout de c-->
+    <string name="add_pokemon_page_title">Ajout d\'une pokémon</string>
+    <string name="add_pokemon_page_upload_button">Charger une image</string>
+    <string name="add_pokemon_name_input">@string/item_pokemon_name</string>
+    <string name="add_pokemon_page_description_input">@string/item_pokemon_description</string>
+
+    <string-array name="add_pokemon_page_tall_spinner_input">
+        <item>Taille : Grande</item>
+        <item>Taille : Moyenne</item>
+        <item>Taille : Petite</item>
+    </string-array>
+
+    <string-array name="add_pokemon_page_power_spinner_input">
+        <item>Puissance : Importante</item>
+        <item>Puissance : Moyenne</item>
+        <item>Puissance : Faible</item>
+    </string-array>
+
+    <string name="add_pokemon_page_confirm">Confirmer</string>
+
+    <!--Pokémon custom-->
+    <string name="item_pokemon_name">Nom de la pokémon</string>
+    <string name="item_pokemon_description">Description ed la pokémon</string>
+
+    <!--Fenetre de détail-->
+    <string name="popup_pokemon_name">Nom</string>
+    <string name="popup_pokemon_description_title">Description</string>
+    <string name="popup_pokemon_description_subtitle">Petite description</string>
+    <string name="popup_pokemon_tall_title">Taille</string>
+    <string name="popup_pokemon_tall_subtitle">Petite description de la taille</string>
+    <string name="popup_pokemon_power_title">Description</string>
+    <string name="popup_pokemon_power_subtitle">Petite description</string>
+	<string name="add_pokemon_page_name_input">Nom du pokémon</string>
+
+</resources>
