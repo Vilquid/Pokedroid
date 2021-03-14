@@ -28,11 +28,13 @@
 	<!-- Composant pour le sous titre par default-->
 	<style name="subtitle_text_style" parent="default_text_style">
 		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:fontFamily">@font/kanit</item>
 	</style>
 
 	<!--  Composant pour le sous titre par default-->
 	<style name="title_text_style" parent="subtitle_text_style">
 		<item name="android:textSize">24sp</item>
+		<item name="android:fontFamily">@font/kanit</item>
 	</style>
 
 	<style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
