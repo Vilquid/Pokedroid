@@ -20,7 +20,7 @@
 		android:text="@string/home_page_last_pokemon_section"
 		android:layout_marginTop="@dimen/default_margin"
 		android:layout_marginLeft="@dimen/default_margin"
-		style="@style/subtitle_text_style"/>
+		style="@style/title_text_style"/>
 
 	<androidx.recyclerview.widget.RecyclerView
 		android:id="@+id/vertical_recycler_view"
@@ -28,6 +28,7 @@
 		android:layout_height="match_parent"
 		android:layout_marginLeft="@dimen/default_margin"
 		android:layout_marginTop="@dimen/default_margin"
-		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-		android:orientation="horizontal"/>
+		android:orientation="vertical"
+		style="@style/default_text_style"
+		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
  </LinearLayout>
