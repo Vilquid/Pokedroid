@@ -26,16 +26,21 @@ class MainActivity : AppCompatActivity()
 				R.id.home_page ->
 				{
 					load_fragment(HomeFragment(this), R.string.home_page_title)
+
 					return@setOnNavigationItemReselectedListener true
 				}
 
-				R.id.collection_page -> {
+				R.id.collection_page ->
+				{
 					load_fragment(CollectionFragment(this), R.string.collection_page_title)
+
 					return@setOnNavigationItemReselectedListener true
 				}
 
-				R.id.add_pokemon_page -> {
+				R.id.add_pokemon_page ->
+				{
 					load_fragment(AddPokemonFragment(this), R.string.add_pokemon_page_title)
+
 					return@setOnNavigationItemReselectedListener true
 				}
 
@@ -44,7 +49,6 @@ class MainActivity : AppCompatActivity()
 		}
 	}
 
-
 	private fun load_fragment(fragment: Fragment, string: Int)
 	{
 		// charger notre repo
@@ -52,10 +56,12 @@ class MainActivity : AppCompatActivity()
 
 		// actualiser le titre de la page
 		findViewById<TextView>(R.id.page_title).text = resources.getString(string)
+
 		// update de la liste
 		repository.update_data {
 			// injecter le fragment container
 			val transaction = supportFragmentManager.beginTransaction()
+
 			transaction.replace(R.id.fragment_container, fragment)
 			transaction.addToBackStack(null)
 			transaction.commit()
