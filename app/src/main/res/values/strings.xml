@@ -37,8 +37,8 @@
     <string name="add_pokemon_page_confirm">Confirmer</string>
 
     <!--Pokémon custom-->
-    <string name="item_pokemon_name">Nom de la pokémon</string>
-    <string name="item_pokemon_description">Description ed la pokémon</string>
+    <string name="item_pokemon_name">Nom du pokémon</string>
+    <string name="item_pokemon_description">Description du pokémon</string>
 
     <!--Fenetre de détail-->
     <string name="popup_pokemon_name">Nom du pokémon</string>
