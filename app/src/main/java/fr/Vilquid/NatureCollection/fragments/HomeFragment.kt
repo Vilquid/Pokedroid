@@ -24,7 +24,7 @@ class HomeFragment(private val context: MainActivity) : Fragment()
 		val horizontal_recycler_view = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
 		horizontal_recycler_view.adapter = PokemonAdapter(context, pokemons_list.filter { it.liked }, R.layout.item_horizontal_pokemon)
 
-		// récupérer le premier reclycler
+		// récupérer le deuxième reclycler
 		val verticel_recycler_view = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
 		verticel_recycler_view.adapter = PokemonAdapter(context, pokemons_list, R.layout.item_vertical_pokemon)
 		verticel_recycler_view.addItemDecoration((PokemonItemDecoration()))

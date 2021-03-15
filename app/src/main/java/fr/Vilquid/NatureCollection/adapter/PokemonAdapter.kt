@@ -43,7 +43,7 @@ class PokemonAdapter(val context: MainActivity, private val pokemon_list: List<P
 		// mettre à jour les noms
 		holder.pokemon_name?.text = current_pokemon.name
 
-		// mettre à jour les descriptionds
+		// mettre à jour les descriptions
 		holder.pokemon_description?.text = current_pokemon.description
 
 		// vérif si le pokémon a été liké
