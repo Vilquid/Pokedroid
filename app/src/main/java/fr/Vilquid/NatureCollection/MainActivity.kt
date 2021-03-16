@@ -59,8 +59,7 @@ class MainActivity : AppCompatActivity()
 
 		// update de la liste
 		repository.update_data {
-			// injecter le fragment container
-			val transaction = supportFragmentManager.beginTransaction()
+			val transaction = supportFragmentManager.beginTransaction() // injecter le fragment container
 
 			transaction.replace(R.id.fragment_container, fragment)
 			transaction.addToBackStack(null)

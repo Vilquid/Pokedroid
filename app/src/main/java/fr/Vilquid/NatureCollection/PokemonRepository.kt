@@ -22,45 +22,36 @@ class PokemonRepository
 	{
 		private val BUCKET_URL: String = "gs://nature-collection-dd858.appspot.com"
 
-		// se connecter à notre espace de stockage
-		val storage_reference = FirebaseStorage.getInstance().getReferenceFromUrl(BUCKET_URL)
+		val storage_reference = FirebaseStorage.getInstance().getReferenceFromUrl(BUCKET_URL) // se connecter à notre espace de stockage
 
-		// se connecter à la ref pokémon
-		val database_ref = FirebaseDatabase.getInstance().getReference("pokemons");
+		val database_ref = FirebaseDatabase.getInstance().getReference("pokemons"); // se connecter à la ref pokémon
 
-		// liste contenant nos pokémons
-		val pokemons_list = arrayListOf<PokemonModel>()
+		val pokemons_list = arrayListOf<PokemonModel>() // liste contenant nos pokémons
 
-		// contenir le lien de l'image courante
-		var download_uri: Uri? = null
+		var download_uri: Uri? = null // contenir le lien de l'image courante
 	}
 
 	fun update_data(callback: () -> Unit)
 	{
-		// absorber la data
-
-		database_ref.addValueEventListener(object : ValueEventListener
+		database_ref.addValueEventListener(object : ValueEventListener // absorber la data
 		{
 			override fun onDataChange(snapshot: DataSnapshot)
 			{
-				// retirer les anciennes
-				pokemons_list.clear()
+				pokemons_list.clear() // retirer les anciens pokémons de la liste (Màj)
 
 				// récolter la liste
 				for (ds in snapshot.children)
 				{
-					// construire un objet plante
-					val pokemon = ds.getValue(PokemonModel::class.java)
+					val pokemon = ds.getValue(PokemonModel::class.java) // construire un objet plante
 
-					// vérif que la plante n'est pas nulle
+					// vérification si la plante n'est pas nulle
 					if (pokemon != null)
 					{
-						pokemons_list.add(pokemon)
+						pokemons_list.add(pokemon) // ajout du pokémon à la liste
 					}
 				}
 
-				// actionner le callback
-				callback()
+				callback() // actionner le callback
 			}
 
 			override fun onCancelled(p0: DatabaseError)
@@ -82,6 +73,7 @@ class PokemonRepository
 
 			// démarrer
 			uploadTask.continueWithTask(Continuation<UploadTask.TaskSnapshot, Task<Uri>> { task ->
+
 				// s'il y a eu un problème lors de l'envoie du fichier
 				if (!task.isSuccessful)
 				{
@@ -90,6 +82,7 @@ class PokemonRepository
 
 				return@Continuation reference.downloadUrl
 			}).addOnCompleteListener{ task ->
+
 				// vérifier que tout a bien fonctionné
 				if (task.isSuccessful)
 				{
@@ -102,10 +95,7 @@ class PokemonRepository
 		}
 	}
 
-	fun update_pokemon(pokemon: PokemonModel)
-	{
-		database_ref.child(pokemon.ID).setValue(pokemon)
-	}
+	fun update_pokemon(pokemon: PokemonModel) = database_ref.child(pokemon.ID).setValue(pokemon)
 
 	// insérer un nouveau poké dans la bdd
 	fun insert_pokemon(pokemon: PokemonModel) = database_ref.child(pokemon.ID).setValue(pokemon)

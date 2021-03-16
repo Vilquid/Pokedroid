@@ -31,20 +31,15 @@ class PokemonAdapter(val context: MainActivity, private val pokemon_list: List<P
 
 	override fun onBindViewHolder(holder: ViewHolder, position: Int)
 	{
-		//  récupérer les info du pokémon
-		val current_pokemon = pokemon_list[position]
+		val current_pokemon = pokemon_list[position] // récupérer les info du pokémon
 
-		// récupérer le repo
-		val repository = PokemonRepository()
+		val repository = PokemonRepository() // récupérer le repo
 
-		// utiliser glide pour récupérer l'image à partir de son lien
-		Glide.with(context).load(Uri.parse(current_pokemon.image_URL)).into(holder.pokemon_image)
+		Glide.with(context).load(Uri.parse(current_pokemon.image_URL)).into(holder.pokemon_image) // utiliser glide pour récupérer l'image à partir de son lien
 
-		// mettre à jour les noms
-		holder.pokemon_name?.text = current_pokemon.name
+		holder.pokemon_name?.text = current_pokemon.name // mettre à jour les noms
 
-		// mettre à jour les descriptions
-		holder.pokemon_description?.text = current_pokemon.description
+		holder.pokemon_description?.text = current_pokemon.description // mettre à jour les descriptions
 
 		// vérif si le pokémon a été liké
 		if(current_pokemon.liked)
@@ -61,8 +56,7 @@ class PokemonAdapter(val context: MainActivity, private val pokemon_list: List<P
 		holder.star_icon.setOnClickListener	{
 			current_pokemon.liked = !current_pokemon.liked
 
-			// màj de l'objet pokémon
-			repository.update_pokemon(current_pokemon)
+			repository.update_pokemon(current_pokemon) // màj de l'objet pokémon
 		}
 
 		// intéraction lors d'un cilck sur une plante
