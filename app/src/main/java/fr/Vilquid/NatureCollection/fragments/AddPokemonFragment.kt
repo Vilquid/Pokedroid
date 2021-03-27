@@ -19,6 +19,7 @@ import fr.Vilquid.NatureCollection.PokemonRepository.Singleton.download_uri
 import fr.Vilquid.NatureCollection.R
 import java.util.*
 
+
 class AddPokemonFragment(private val context: MainActivity): Fragment()
 {
 	private var file:Uri? = null

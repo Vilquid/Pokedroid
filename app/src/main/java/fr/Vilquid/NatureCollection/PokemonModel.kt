@@ -1,5 +1,6 @@
 package fr.Vilquid.NatureCollection
 
+
 class PokemonModel(
 	val ID: String = "pokemon_0",
 	val name: String = "Pokémon_stylé",

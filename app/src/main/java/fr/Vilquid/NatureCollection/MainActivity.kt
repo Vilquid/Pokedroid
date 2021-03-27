@@ -9,6 +9,7 @@ import fr.Vilquid.NatureCollection.fragments.AddPokemonFragment
 import fr.Vilquid.NatureCollection.fragments.CollectionFragment
 import fr.Vilquid.NatureCollection.fragments.HomeFragment
 
+
 class MainActivity : AppCompatActivity()
 {
 	override fun onCreate(savedInstanceState: Bundle?)
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity()
 					return@setOnNavigationItemReselectedListener true
 				}
 
-				else -> false
+				// else -> false
 			}
 		}
 	}

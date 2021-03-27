@@ -14,7 +14,7 @@ import fr.Vilquid.NatureCollection.PokemonRepository.Singleton.download_uri
 import fr.Vilquid.NatureCollection.PokemonRepository.Singleton.pokemons_list
 import fr.Vilquid.NatureCollection.PokemonRepository.Singleton.storage_reference
 import java.util.*
-import javax.security.auth.callback.Callback
+
 
 class PokemonRepository
 {

@@ -9,6 +9,7 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import fr.Vilquid.NatureCollection.adapter.PokemonAdapter
 
+
 class PokemonPopup(private val adapter: PokemonAdapter, private val current_pokemon: PokemonModel) : Dialog(adapter.context)
 {
 	override fun onCreate(savedInstanceState: Bundle?)

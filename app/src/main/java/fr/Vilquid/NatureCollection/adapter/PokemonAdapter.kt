@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import fr.Vilquid.NatureCollection.*
 
+
 class PokemonAdapter(val context: MainActivity, private val pokemon_list: List<PokemonModel>, private val layout_id: Int) : RecyclerView.Adapter<PokemonAdapter.ViewHolder>()
 {
 	// boite pour ranger tous les composants à controller

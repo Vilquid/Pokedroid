@@ -13,6 +13,7 @@ import fr.Vilquid.NatureCollection.R
 import fr.Vilquid.NatureCollection.adapter.PokemonAdapter
 import fr.Vilquid.NatureCollection.adapter.PokemonItemDecoration
 
+
 class CollectionFragment(private val context: MainActivity): Fragment()
 {
 	override fun onCreateView(inflater: LayoutInflater,	container: ViewGroup?, savedInstanceState: Bundle?): View?
