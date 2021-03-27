@@ -50,7 +50,7 @@
 		android:id="@+id/popup_pokemon_description_title"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/popup_pokemon_description_title"
+		android:text="Type"
 		app:layout_constraintStart_toStartOf="@+id/cardView"
 		android:layout_marginTop="@dimen/default_margin"
 		style="@style/title_text_style"
@@ -61,7 +61,7 @@
 		android:id="@+id/popup_pokemon_description_subtitle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/popup_pokemon_description_subtitle"
+		android:text="Electrique - Feu - Eau - ..."
 		app:layout_constraintStart_toStartOf="@+id/popup_pokemon_description_title"
 		style="@style/default_text_style"
 		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_description_title"/>
@@ -91,7 +91,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="@dimen/default_margin"
-		android:text="@string/popup_pokemon_power_title"
+		android:text="Puissance"
 		app:layout_constraintStart_toStartOf="@+id/popup_pokemon_tall_subtitle"
 		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_tall_subtitle"/>
 
@@ -109,7 +109,8 @@
 		style="@style/title_text_style"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/popup_pokemon_power_title"
+		android:text="Sexe"
+		android:layout_marginTop="@dimen/default_margin"
 		app:layout_constraintStart_toStartOf="@+id/popup_pokemon_power_subtitle"
 		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_power_subtitle"/>
 
@@ -118,7 +119,7 @@
 		style="@style/default_text_style"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/popup_pokemon_power_subtitle"
+		android:text="Mâle - Femelle - Indéterminé"
 		app:layout_constraintStart_toStartOf="@+id/textView"
 		app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
@@ -127,7 +128,8 @@
 		style="@style/title_text_style"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/popup_pokemon_power_title"
+		android:text="Avis"
+		android:layout_marginTop="@dimen/default_margin"
 		app:layout_constraintStart_toStartOf="@+id/textView2"
 		app:layout_constraintTop_toBottomOf="@+id/textView2"/>
 
@@ -136,7 +138,7 @@
 		style="@style/default_text_style"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/popup_pokemon_power_subtitle"
+		android:text="Un bon pokémon"
 		app:layout_constraintStart_toStartOf="@+id/textView3"
 		app:layout_constraintTop_toBottomOf="@+id/textView3"/>
 

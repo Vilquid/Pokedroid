@@ -4,7 +4,6 @@ import android.app.Dialog
 import android.net.Uri
 import android.os.Bundle
 import android.view.Window
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
