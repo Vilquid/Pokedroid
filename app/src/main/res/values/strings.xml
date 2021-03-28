@@ -54,4 +54,5 @@
 	<string name="popup_pokemon_avis_subtitle">Un bon pokémon</string>
 	<string name="popup_pokemon_star_button">Like</string>
 	<string name="popup_pokemon_delete_button">Supprimer</string>
+	<string name="popup_pokemon_image">Image du pokémon</string>
 </resources>
