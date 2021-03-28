@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:orientation="vertical"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
@@ -26,7 +27,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
 			android:scaleType="centerCrop"
-			android:src="@drawable/trending2" />
+			android:src="@drawable/trending2"/>
 
 	</LinearLayout>
 
@@ -37,7 +38,8 @@
 		android:layout_margin="@dimen/default_margin"
 		android:hint="@string/add_pokemon_page_name_input"
 		style="@style/default_text_style"
-		android:paddingLeft="@dimen/default_margin"/>
+		android:paddingStart="@dimen/default_margin"
+		tools:ignore="RtlSymmetry" />
 
 	<EditText
 		android:id="@+id/description_input"
@@ -55,7 +57,8 @@
 		android:entries="@array/add_pokemon_page_power_spinner_input"
 		android:layout_margin="@dimen/default_margin"
 		style="@style/default_text_style"
-		android:paddingLeft="@dimen/default_margin"/>
+		android:paddingStart="@dimen/default_margin"
+		tools:ignore="RtlSymmetry" />
 
 	<Spinner
 		android:id="@+id/tall_input"
@@ -64,7 +67,8 @@
 		android:entries="@array/add_pokemon_page_tall_spinner_input"
 		android:layout_margin="@dimen/default_margin"
 		style="@style/default_text_style"
-		android:paddingLeft="@dimen/default_margin"/>
+		android:paddingStart="@dimen/default_margin"
+		tools:ignore="RtlSymmetry"/>
 
 	<Button
 		android:id="@+id/confirm_button"
