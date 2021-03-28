@@ -38,14 +38,20 @@
 
 	<!--Pokémon custom-->
 	<string name="item_pokemon_name">Nom du pokémon</string>
-	<string name="item_pokemon_description">Description du pokémon</string>
+	<string name="item_pokemon_description">Type</string>
 
 	<!--Fenetre de détail-->
-	<string name="popup_pokemon_name">Nom du pokémon</string>
-	<string name="popup_pokemon_description_title">Description</string>
-	<string name="popup_pokemon_description_subtitle">Petite description</string>
+	<string name="popup_pokemon_name">@string/item_pokemon_name</string>
+	<string name="popup_pokemon_description_title">Type</string>
+	<string name="popup_pokemon_description_subtitle">Electrique - Feu - Eau - …</string>
 	<string name="popup_pokemon_tall_title">Taille</string>
-	<string name="popup_pokemon_tall_subtitle">Petite description de la taille</string>
-	<string name="popup_pokemon_power_title">Description</string>
-	<string name="popup_pokemon_power_subtitle">Petite description</string>
+	<string name="popup_pokemon_tall_subtitle">Grande - Moyenne - Petite</string>
+	<string name="popup_pokemon_power_title">Puissance</string>
+	<string name="popup_pokemon_power_subtitle">Importante - Moyenne - Faible</string>
+	<string name="popup_pokemon_sex_title">Sexe</string>
+	<string name="popup_pokemon_sex_subtitle">Mâle - Femelle - Indéterminé</string>
+	<string name="popup_pokemon_avis_title">Avis</string>
+	<string name="popup_pokemon_avis_subtitle">Un bon pokémon</string>
+	<string name="popup_pokemon_star_button">Like</string>
+	<string name="popup_pokemon_delete_button">Supprimer</string>
 </resources>

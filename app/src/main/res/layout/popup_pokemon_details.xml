@@ -61,7 +61,7 @@
 		android:id="@+id/popup_pokemon_description_subtitle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Electrique - Feu - Eau - ..."
+		android:text="@string/popup_pokemon_description_subtitle"
 		app:layout_constraintStart_toStartOf="@+id/popup_pokemon_description_title"
 		style="@style/default_text_style"
 		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_description_title"/>
@@ -105,42 +105,42 @@
 		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_power_title"/>
 
 	<TextView
-		android:id="@+id/textView"
+		android:id="@+id/popup_pokemon_sex_title"
 		style="@style/title_text_style"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Sexe"
+		android:text="@string/popup_pokemon_sex_title"
 		android:layout_marginTop="@dimen/default_margin"
 		app:layout_constraintStart_toStartOf="@+id/popup_pokemon_power_subtitle"
 		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_power_subtitle"/>
 
 	<TextView
-		android:id="@+id/textView2"
+		android:id="@+id/popup_pokemon_sex_subtitle"
 		style="@style/default_text_style"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Mâle - Femelle - Indéterminé"
-		app:layout_constraintStart_toStartOf="@+id/textView"
-		app:layout_constraintTop_toBottomOf="@+id/textView"/>
+		android:text="@string/popup_pokemon_sex_subtitle"
+		app:layout_constraintStart_toStartOf="@+id/popup_pokemon_sex_title"
+		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_sex_title"/>
 
 	<TextView
-		android:id="@+id/textView3"
+		android:id="@+id/popup_pokemon_avis_title"
 		style="@style/title_text_style"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Avis"
+		android:text="@string/popup_pokemon_avis_title"
 		android:layout_marginTop="@dimen/default_margin"
-		app:layout_constraintStart_toStartOf="@+id/textView2"
-		app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+		app:layout_constraintStart_toStartOf="@+id/popup_pokemon_sex_subtitle"
+		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_sex_subtitle"/>
 
 	<TextView
-		android:id="@+id/textView4"
+		android:id="@+id/popup_pokemon_avis_subtitle"
 		style="@style/default_text_style"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Un bon pokémon"
-		app:layout_constraintStart_toStartOf="@+id/textView3"
-		app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+		android:text="@string/popup_pokemon_avis_subtitle"
+		app:layout_constraintStart_toStartOf="@+id/popup_pokemon_avis_title"
+		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_avis_title"/>
 
 	<View
 		android:id="@+id/view_separation"
@@ -149,7 +149,7 @@
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/textView4" />
+		app:layout_constraintTop_toBottomOf="@+id/popup_pokemon_avis_subtitle" />
 
 	<ImageView
 		android:id="@+id/delete_button"
@@ -161,7 +161,7 @@
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="@+id/view_separation"
 		android:layout_marginStart="40dp"
-		android:contentDescription="delete_button"/>
+		android:contentDescription="@string/popup_pokemon_delete_button"/>
 
 	<ImageView
 		android:id="@+id/star_button"
@@ -173,5 +173,5 @@
 		app:layout_constraintStart_toEndOf="@+id/view_separation"
 		app:layout_constraintTop_toTopOf="@+id/view_separation"
 		android:layout_marginEnd="40dp"
-		android:contentDescription="star_button"/>
+		android:contentDescription="@string/popup_pokemon_star_button"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
