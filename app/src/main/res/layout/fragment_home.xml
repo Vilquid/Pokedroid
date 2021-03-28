@@ -19,14 +19,14 @@
 		android:layout_height="wrap_content"
 		android:text="@string/home_page_last_pokemon_section"
 		android:layout_marginTop="@dimen/default_margin"
-		android:layout_marginLeft="@dimen/default_margin"
+		android:layout_marginStart="@dimen/default_margin"
 		style="@style/title_text_style"/>
 
 	<androidx.recyclerview.widget.RecyclerView
 		android:id="@+id/vertical_recycler_view"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:layout_marginLeft="@dimen/default_margin"
+		android:layout_marginStart="@dimen/default_margin"
 		android:layout_marginTop="@dimen/default_margin"
 		android:orientation="vertical"
 		style="@style/default_text_style"
